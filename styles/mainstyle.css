@@ -1,0 +1,123 @@
+html, body {
+    margin: 0px;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+/*.show-page {
+    display:block;
+}*/
+.hide-page {
+    display: none;
+}
+
+.search-wrapper, .yes-wrapper, .no-wrapper {
+    background: #C01E2D;
+    width:100%;
+    height:100vh;
+}
+
+.yes-wrapper {
+    background: #42677A;
+}
+
+.no-wrapper {
+    background: #C8CCCD;
+}
+
+.logo {
+    width: 264px;
+    margin:0 auto 49px auto;
+    padding-top:36px;
+}
+.logo-img {
+    width: 100%;
+}
+
+label {
+    max-width: 330px;
+    width:90%;
+    color: #ffffff;
+    display: block;
+    margin:0 auto;
+    text-align: left;
+    padding-top: 26px;
+}
+
+input, select {
+    max-width: 330px;
+    width:90%;
+    height: 45px;    
+    background: #FFFFFF;
+    border: 2px solid #830712;
+    border-radius: 7px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+.dog-box, .fireworks-box, .anyday-box {
+    width:auto;
+    max-width: 513px;
+    margin: 0 auto 26px auto;
+}
+.fireworks-box {
+    width:auto;
+    max-width: 100%;
+    margin: 0 auto 26px auto;
+}
+.dog-image, .fireworks-image, .anyday-image {
+    width: 100%;
+}
+button {
+    font-size: 30px;
+    color: #ffffff;
+    width: 250px;
+    height: 55px;
+    border: none;
+    background: #830712;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+}
+
+.yes-wrapper {
+    background: #42677A;
+}
+h2 {
+    max-width: 600px;
+    width: 80%;
+    font-size: 40px;
+    text-align: left;
+    margin: 0 auto;
+    color: #ffffff;
+}
+.holiday-box {
+    box-sizing: border-box;
+    margin: 0 auto;
+    border: 2px solid #ffffff;
+    font-weight: 400;
+    color: #ffffff;
+    border-radius:7px;
+    max-width: 600px;
+    width: 80%;
+    padding:20px;
+    background: rgba(66, 103, 122, 0.4);
+}
+
+.back-btn {
+    background: #2E4754;
+}
+
+.title-box {
+    padding-top: 36px;
+    padding-bottom: 26px;
+}
+
+.highlight-text {
+    color:#2E4754;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Finder</title>
+    <link rel="stylesheet" href="./styles/mainstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+        <div class="wrapper">
+            <div id="search-wrapper" class="search-wrapper">
+                <div class="logo"><img class="logo-img" src="./images/title-holiday-finder.png" alt="Holiday Finder"></div>
+                <label for="date">Choose a Date:</label>
+                <input type="date" id="date-input"><br/>
+                <label for="city">Choose a City:</label>
+                <select id="country-input" name="city">
+                    <option value="London">London</option>
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="Madrid">Madrid</option>
+                    <option value="New York">New York</option>
+                    <option value="Athens">Athens</option>
+                    <option value="Cape Town">Cape Town</option>
+                    <option value="Sydney">Sydney</option>
+                </select>
+                <div class="dog-box"><img class="dog-image" src="./images/dog 1.png" alt="Pug with reindeer antlers"></div>
+                <button type="button" id="submit-btn" onclick="findHoliday()">
+                    Find Out!
+                </button>
+            </div>
+            <div id="yes-wrapper" class="yes-wrapper">
+                <div class="title-box">
+                    <h2>Friday, June 24th Is a holiday in Barcelona:</h2>
+                </div>
+
+                <div class="holiday-box">
+                    <h3>Saint Joan / Midsummer solstice</h3>
+                    <p>Observances: Dolorum eius sint aliquid corporis expedita voluptas consectetur.</p>
+                </div>
+                <div class="fireworks-box"><img class="fireworks-image" src="./images/fireworks.jpg" alt="Two hands holding sparklers "></div>
+                <button type="button" class="back-btn" id="back-btn" onclick="goBack()">
+                    New Search
+                </button>
+            </div>
+            <div id="no-wrapper" class="no-wrapper">
+                <div class="title-box">
+                    <h2>Tuesday, December 13th Is <span class="highlight-text">just another day</span> in Barcelona</h2>
+                </div>
+                <div class="anyday-box"><img class="anyday-image" src="./images/pomeranian.jpg" alt="A pomeranian with glasses using an Ipad"></div>
+                <button type="button" class="back-btn" id="back-btn" onclick="goBack()">
+                    New Search
+                </button>
+            </div>    
+            
+        </div>
+
+    
+
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
