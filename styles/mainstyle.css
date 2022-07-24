@@ -8,9 +8,7 @@ html, body {
     font-size: 20px;
     box-sizing: border-box;
 }
-/*.show-page {
-    display:block;
-}*/
+
 .hide-page {
     display: none;
 }
@@ -21,17 +19,19 @@ html, body {
     height:100vh;
 }
 
-.yes-wrapper {
-    background: #42677A;
-}
+
 
 .no-wrapper {
     background: #C8CCCD;
+    background-image: url("../images/pomeranian.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
 }
 
 .logo {
     width: 264px;
-    margin:0 auto 49px auto;
+    margin:0 auto;
     padding-top:36px;
 }
 .logo-img {
@@ -64,7 +64,7 @@ input, select {
 .dog-box, .fireworks-box, .anyday-box {
     width:auto;
     max-width: 513px;
-    margin: 0 auto 26px auto;
+    margin: 0 auto;
 }
 .fireworks-box {
     width:auto;
@@ -87,7 +87,12 @@ button {
 
 .yes-wrapper {
     background: #42677A;
+    background-image: url("../images/fireworks.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
 }
+
 h2 {
     max-width: 600px;
     width: 80%;
@@ -111,6 +116,7 @@ h2 {
 
 .back-btn {
     background: #2E4754;
+    margin-top: 30px;
 }
 
 .title-box {

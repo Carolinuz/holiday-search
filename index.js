@@ -19,6 +19,7 @@ let boxContent = "";
 
 
 const findHoliday = async() => {
+
 	//the replace method solves the false date issue - otherwise you get one day before the one you selected
 	const holiDate = new Date((dateInput.value).replace(/-/g, '\/'));
 	const selectedCountry = countryInput.value;
@@ -37,13 +38,13 @@ const findHoliday = async() => {
 		}else{
 			dateEnding = selectedDate + "th"
 		}
-	const myKey2 = `https://calendarific.com/api/v2/holidays?api_key=${myKey}&country=${selectedCountry}&year=${selectedYear}&month=${selectedMonth}&date=${selectedDate}`;
+	const myKey2 = `https://calendarific.com/api/v2/holidays?api_key=${myKey}&country=${selectedCountry}&year=${selectedYear}&month=${selectedMonth}&day=${selectedDate}`;
 	try {
 		let calendarResponse = await fetch(myKey2)
 		const calendar = await calendarResponse.json()
 		const isHoliday = (calendar.response.holidays);
 		if (isHoliday.length > 0) {
-
+			console.log(myKey2)
 			isHoliday.forEach(element => {
 				partialBoxContent = `
 				<h3>${element.name}
