@@ -17,36 +17,34 @@
                 <div class="logo"><img class="logo-img" src="./images/title-holiday-finder.png" alt="Holiday Finder"></div>
                 <label for="date">Choose a Date:</label>
                 <input type="date" id="date-input"><br/>
-                <label for="city">Choose a City:</label>
-                <select id="country-input" name="city">
-                    <option value="London">London</option>
-                    <option value="Buenos Aires">Buenos Aires</option>
-                    <option value="Madrid">Madrid</option>
-                    <option value="New York">New York</option>
-                    <option value="Athens">Athens</option>
-                    <option value="Cape Town">Cape Town</option>
-                    <option value="Sydney">Sydney</option>
+                <label for="country">Choose a Country:</label>
+                <select id="country-input" name="country">
+                    <option value="France">France</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Spain">Spain</option>
+                    <option value="USA">United States</option>
+                    <option value="Greece">Greece</option>
+                    <option value="South-africa">South Africa</option>
+                    <option value="Australia">Australia</option>
                 </select>
                 <div class="dog-box"><img class="dog-image" src="./images/dog 1.png" alt="Pug with reindeer antlers"></div>
                 <button type="button" id="submit-btn" onclick="findHoliday()">
                     Find Out!
                 </button>
             </div>
-            <div id="yes-wrapper" class="yes-wrapper">
+            <div id="yes-wrapper" class="yes-wrapper hide-page">
                 <div class="title-box">
                     <h2>Friday, June 24th Is a holiday in Barcelona:</h2>
                 </div>
 
-                <div class="holiday-box">
-                    <h3>Saint Joan / Midsummer solstice</h3>
-                    <p>Observances: Dolorum eius sint aliquid corporis expedita voluptas consectetur.</p>
+                <div class="holiday-box" id="holiday-box">
                 </div>
                 <div class="fireworks-box"><img class="fireworks-image" src="./images/fireworks.jpg" alt="Two hands holding sparklers "></div>
                 <button type="button" class="back-btn" id="back-btn" onclick="goBack()">
                     New Search
                 </button>
             </div>
-            <div id="no-wrapper" class="no-wrapper">
+            <div id="no-wrapper" class="no-wrapper hide-page">
                 <div class="title-box">
                     <h2>Tuesday, December 13th Is <span class="highlight-text">just another day</span> in Barcelona</h2>
                 </div>
